@@ -23,9 +23,11 @@ You can configure the behavior by passing an options object:
 new chbs({
     min: 15, // Mininum number of characters in returned passphrase. Default 20.
     max: 25, // Maximum number of characters in returned passphrase. Default 30.
-    words: "wordlist/enable.txt" // Use a different word list. Default "up-goer-five.txt".
+    words: "enable.txt" // Use a different word list. Default "up-goer-five.txt".
 });
 ```
+
+When specifying a wordlist, if the file isn't found at the path specified, the code will fall back to checking the built-in `wordlist` directory for a file with the given name.
 
 #### Callback
 
