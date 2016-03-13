@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var chbs = require("./");
+new chbs();
