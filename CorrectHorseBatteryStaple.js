@@ -1,5 +1,6 @@
 var CorrectHorseBatteryStaple = function (options, callback) {
     var fs = require('fs');
+    var path = require('path');
 
     // Support passing callback as only argument.
     if (typeof options === "function") {
@@ -12,7 +13,7 @@ var CorrectHorseBatteryStaple = function (options, callback) {
     this.options = {
         min: this.options.min || 20,
         max: this.options.max || 30,
-        words: this.options.words || "wordlist/up-goer-five.txt"
+        words: this.options.words || path.join(__dirname, './wordlist') + "/up-goer-five.txt"
     };
 
     // If no callback is provided, log to the console.

@@ -1,6 +1,6 @@
 {
     "name": "correcthorsebatterystaple",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Generate passwords made up of a few simple words",
     "keywords": ["password", "passphrase", "xkcd"],
     "homepage": "http://github.com/rfreebern/CorrectHorseBatteryStaple.js",
